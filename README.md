@@ -1,4 +1,4 @@
-# Ansible Role: Redis Yum/Dnf Repo (Remi Modular Configuration)
+# Ansible Role: Redis Yum/Dnf Repo (AppStream Modular Configuration)
 
 Configures the Yum/Dnf Stream Module for Redis on RHEL/CentOS 8.
 
@@ -18,9 +18,9 @@ None.
 
     - hosts: all
       vars:
-        redis_stream_version: "remi-6.2"
+        redis_stream_version: "6"
       roles:
-        - { role: classyllama.repo-redis-remi-modular }
+        - { role: classyllama.repo-redis-appstream-modular }
 
 ## License
 
